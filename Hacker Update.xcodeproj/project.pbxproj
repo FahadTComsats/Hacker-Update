@@ -13,6 +13,10 @@
 		8DA9928D24C5B9890057908E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA9928C24C5B9890057908E /* Assets.xcassets */; };
 		8DA9929024C5B9890057908E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA9928F24C5B9890057908E /* Preview Assets.xcassets */; };
 		8DA9929324C5B9890057908E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA9929124C5B9890057908E /* LaunchScreen.storyboard */; };
+		8DA9929C24C5BF5D0057908E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9929B24C5BF5D0057908E /* NetworkManager.swift */; };
+		8DA9929E24C5D8210057908E /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9929D24C5D8210057908E /* PostData.swift */; };
+		8DA992A124C5FE5B0057908E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA992A024C5FE5B0057908E /* DetailView.swift */; };
+		8DA992A324C617F50057908E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA992A224C617F50057908E /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8DA9928F24C5B9890057908E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DA9929224C5B9890057908E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA9929424C5B9890057908E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA9929B24C5BF5D0057908E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8DA9929D24C5D8210057908E /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		8DA992A024C5FE5B0057908E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8DA992A224C617F50057908E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,8 @@
 			children = (
 				8DA9928624C5B9850057908E /* AppDelegate.swift */,
 				8DA9928824C5B9850057908E /* SceneDelegate.swift */,
-				8DA9928A24C5B9850057908E /* ContentView.swift */,
+				8DA9929F24C5FE2D0057908E /* Views */,
+				8DA9929A24C5BF020057908E /* Models */,
 				8DA9928C24C5B9890057908E /* Assets.xcassets */,
 				8DA9929124C5B9890057908E /* LaunchScreen.storyboard */,
 				8DA9929424C5B9890057908E /* Info.plist */,
@@ -73,6 +82,25 @@
 				8DA9928F24C5B9890057908E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DA9929A24C5BF020057908E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DA9929B24C5BF5D0057908E /* NetworkManager.swift */,
+				8DA9929D24C5D8210057908E /* PostData.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8DA9929F24C5FE2D0057908E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DA9928A24C5B9850057908E /* ContentView.swift */,
+				8DA992A024C5FE5B0057908E /* DetailView.swift */,
+				8DA992A224C617F50057908E /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DA9929E24C5D8210057908E /* PostData.swift in Sources */,
+				8DA992A124C5FE5B0057908E /* DetailView.swift in Sources */,
+				8DA9929C24C5BF5D0057908E /* NetworkManager.swift in Sources */,
 				8DA9928724C5B9850057908E /* AppDelegate.swift in Sources */,
 				8DA9928924C5B9850057908E /* SceneDelegate.swift in Sources */,
 				8DA9928B24C5B9850057908E /* ContentView.swift in Sources */,
+				8DA992A324C617F50057908E /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
